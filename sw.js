@@ -1,5 +1,10 @@
-var cacheName = "rs-iiif";
-var filesToCache = ["./", "./index.html", "./rs-iiif.js", "./rs-iiif_bg.wasm"];
+var cacheName = "rs-iiif-browser";
+var filesToCache = [
+  "./",
+  "./index.html",
+  "./rs-iiif-browser.js",
+  "./rs-iiif-browser_bg.wasm",
+];
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener("install", function (e) {
