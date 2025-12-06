@@ -290,8 +290,8 @@ function wasm_bindgen__convert__closures_____invoke__h0ebc7e9a7afa3bfe(arg0, arg
     wasm.wasm_bindgen__convert__closures_____invoke__h0ebc7e9a7afa3bfe(arg0, arg1, arg2);
 }
 
-function wasm_bindgen__convert__closures_____invoke__hc17e7b996360d52f(arg0, arg1) {
-    wasm.wasm_bindgen__convert__closures_____invoke__hc17e7b996360d52f(arg0, arg1);
+function wasm_bindgen__convert__closures_____invoke__h9ac7b8c3b4f3f46f(arg0, arg1, arg2, arg3) {
+    wasm.wasm_bindgen__convert__closures_____invoke__h9ac7b8c3b4f3f46f(arg0, arg1, arg2, arg3);
 }
 
 function wasm_bindgen__convert__closures_____invoke__h25d65da937875da8(arg0, arg1, arg2) {
@@ -302,8 +302,8 @@ function wasm_bindgen__convert__closures_____invoke__he3a7cdce60628764(arg0, arg
     wasm.wasm_bindgen__convert__closures_____invoke__he3a7cdce60628764(arg0, arg1, arg2);
 }
 
-function wasm_bindgen__convert__closures_____invoke__h9ac7b8c3b4f3f46f(arg0, arg1, arg2, arg3) {
-    wasm.wasm_bindgen__convert__closures_____invoke__h9ac7b8c3b4f3f46f(arg0, arg1, arg2, arg3);
+function wasm_bindgen__convert__closures_____invoke__hc17e7b996360d52f(arg0, arg1) {
+    wasm.wasm_bindgen__convert__closures_____invoke__hc17e7b996360d52f(arg0, arg1);
 }
 
 const __wbindgen_enum_RequestMode = ["same-origin", "no-cors", "cors", "navigate"];
