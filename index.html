@@ -13,10 +13,10 @@
         <title>Rs IIIF Browser</title>
 
         <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
-        
+
 <script type="module">
-import init, * as bindings from '/rs-iiif-browser.js';
-const wasm = await init({ module_or_path: '/rs-iiif-browser_bg.wasm' });
+import init, * as bindings from 'https://leungkkf.github.io/testbed/rs-iiif-browser.js';
+const wasm = await init({ module_or_path: 'https://leungkkf.github.io/testbed/rs-iiif-browser_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -30,12 +30,12 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
         <link rel="icon" href="/favicon.ico" integrity="sha384-jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
 
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
 
         <link rel="manifest" href="manifest.json" />
         <link rel="apple-touch-icon" href="assets/icon_ios_touch_192.png" />
@@ -136,7 +136,6 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
                 }
             }
         </style>
-    <link rel="modulepreload" href="/rs-iiif-browser.js" crossorigin="anonymous" integrity="sha384-aRahHDrYPp81+DXVvPmk1IHCxgqVQyQt8qzmCZjrmawlVzsj6NNzbMbM+3m/+ONR"><link rel="preload" href="/rs-iiif-browser_bg.wasm" crossorigin="anonymous" integrity="sha384-6Qx2tIyFI9KHOSH666i13HsdFi5l9P4C1+nD0diVm1LBdy+VeQGR0yizZ38w5+Jv" as="fetch" type="application/wasm"></head>
 
     <body>
         <!-- The WASM code will resize the canvas dynamically -->
