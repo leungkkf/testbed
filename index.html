@@ -15,8 +15,8 @@
         <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
         
 <script type="module">
-import init, * as bindings from '/rs-iiif-browser-434f2031c90c75a.js';
-const wasm = await init({ module_or_path: '/rs-iiif-browser-434f2031c90c75a_bg.wasm' });
+import init, * as bindings from 'https://leungkkf.github.io/testbed/rs-iiif-browser-434f2031c90c75a.js';
+const wasm = await init({ module_or_path: 'https://leungkkf.github.io/testbed/rs-iiif-browser-434f2031c90c75a_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -26,9 +26,9 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
         <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
-        <base href="/" />
+        <base href="https://leungkkf.github.io/testbed/" />
 
-        <link rel="icon" href="/favicon-f402c8741ce815ec.ico" integrity="sha384-jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
+        <link rel="icon" href="https://leungkkf.github.io/testbed/favicon-f402c8741ce815ec.ico" integrity="sha384-jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
 
         
         
@@ -135,7 +135,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
                 }
             }
         </style>
-    <link rel="modulepreload" href="/rs-iiif-browser-434f2031c90c75a.js" crossorigin="anonymous" integrity="sha384-1EHEfY5v9HRnxTBGWlpIQDCLefhR7hMRNw0Uda9FKkOnCRh77bqBh3cx0f4gfjFQ"><link rel="preload" href="/rs-iiif-browser-434f2031c90c75a_bg.wasm" crossorigin="anonymous" integrity="sha384-yf8BYLiBkRAxBV3WA2f2NpWjfloHYq0au2LgvsoaqQTrW9i4Q+7TvWOWyBh3Yw2j" as="fetch" type="application/wasm"></head>
+    <link rel="modulepreload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-434f2031c90c75a.js" crossorigin="anonymous" integrity="sha384-JCBh7CGJi32bCjwZN1lUg8ASWhSpzY7sheeHPTSL8siu0pmVL5pQRhj7pzloh0a8"><link rel="preload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-434f2031c90c75a_bg.wasm" crossorigin="anonymous" integrity="sha384-kfH/uvzQ7IQm56PX1JaI/JsWKU4NuZxHa6MxtBmrNjNX8fYbjzq2VC5hvp/T0YwN" as="fetch" type="application/wasm"></head>
 
     <body>
         <!-- the loading spinner will be removed in main.rs -->
