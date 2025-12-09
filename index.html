@@ -15,8 +15,8 @@
         <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
         
 <script type="module">
-import init, * as bindings from 'https://leungkkf.github.io/testbed/rs-iiif-browser-434f2031c90c75a.js';
-const wasm = await init({ module_or_path: 'https://leungkkf.github.io/testbed/rs-iiif-browser-434f2031c90c75a_bg.wasm' });
+import init, * as bindings from 'https://leungkkf.github.io/testbed/rs-iiif-browser-71be471a37345f05.js';
+const wasm = await init({ module_or_path: 'https://leungkkf.github.io/testbed/rs-iiif-browser-71be471a37345f05_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -135,7 +135,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
                 }
             }
         </style>
-    <link rel="modulepreload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-434f2031c90c75a.js" crossorigin="anonymous" integrity="sha384-qh7BkpCTEsRUMUCJxQPrwzE2j9g8IB9mBTxiucUBuY74uJQ3OsNzZSTXLSiT9vB1"><link rel="preload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-434f2031c90c75a_bg.wasm" crossorigin="anonymous" integrity="sha384-TNvfMKc0fig+83Jtz2dt5SBoHYsgnxkSyvlg8Yr7bS3kObm2wNHLj43ZCoWohwlW" as="fetch" type="application/wasm"></head>
+    <link rel="modulepreload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-71be471a37345f05.js" crossorigin="anonymous" integrity="sha384-ePTGy1GZ0fSaZ7Y/kPuXvDaxO8B7YzBFSJ+FVCg7iQ1r2EMrvcP690iIEDO4PhuT"><link rel="preload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-71be471a37345f05_bg.wasm" crossorigin="anonymous" integrity="sha384-mLpBYBV5pk/3/i1zF/qYldBzElWneg8acVknI7JLxUjEOv6cGf1MsHWbRQuNbR6b" as="fetch" type="application/wasm"></head>
 
     <body>
         <!-- the loading spinner will be removed in main.rs -->
@@ -154,6 +154,10 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
                         if (addedNode instanceof HTMLCanvasElement) {
                             // Prevent dragging the canvas
                             addedNode.addEventListener("dragstart", (event) => {
+                                event.preventDefault();
+                            });
+                            // Prevent touch events for the canvas.
+                            addedNode.addEventListener("touchstart", (event) => {
                                 event.preventDefault();
                             });
 
