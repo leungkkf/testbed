@@ -17,8 +17,8 @@
         <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
         
 <script type="module">
-import init, * as bindings from 'https://leungkkf.github.io/testbed/rs-iiif-browser-94c50769b36f9878.js';
-const wasm = await init({ module_or_path: 'https://leungkkf.github.io/testbed/rs-iiif-browser-94c50769b36f9878_bg.wasm' });
+import init, * as bindings from 'https://leungkkf.github.io/testbed/rs-iiif-browser-ea2466889b5ff070.js';
+const wasm = await init({ module_or_path: 'https://leungkkf.github.io/testbed/rs-iiif-browser-ea2466889b5ff070_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -137,7 +137,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
                 }
             }
         </style>
-    <link rel="modulepreload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-94c50769b36f9878.js" crossorigin="anonymous" integrity="sha384-aZPhzTPK6TikolgpTw329WaPoI9SV9/HCmmSG6t+Rofd7t8UfkOQQApEmlX3j8fi"><link rel="preload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-94c50769b36f9878_bg.wasm" crossorigin="anonymous" integrity="sha384-BQgil6Y1dcCsOMXI5vOp6anhhCRjXfVJLz2iJCJdwVvKu/vpCI9C3Yup0ssmai+R" as="fetch" type="application/wasm"></head>
+    <link rel="modulepreload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-ea2466889b5ff070.js" crossorigin="anonymous" integrity="sha384-NVQAxVpHrVrXIbUIz+7R1aauzbyo0tcWPa3edxXiqIK8kpTnPVe1gaQeF5MZBky7"><link rel="preload" href="https://leungkkf.github.io/testbed/rs-iiif-browser-ea2466889b5ff070_bg.wasm" crossorigin="anonymous" integrity="sha384-PiPLKp5hq3RC1IEt3TNRkowVbi2mGHIeBT+t/yPTMkcmgJyYxqIlBl2aREX9vcD6" as="fetch" type="application/wasm"></head>
 
     <body>
         <!-- the loading spinner will be removed in main.rs -->
